@@ -8,14 +8,11 @@
     <title>Tela de Login</title>
   </head>
   <body>
-    <!-- <div class="login-image-logo-container">
-      <img
-        th:src="@{/images/7465FC35-1D88-44AA-A162-04D4B5F20D7D.gif}"
-        alt="Logo PUC Minas"
-      />
-    </div> -->
-    <div class="login-form">
-      <form th:action="@{/login}" method="post" class="login-form">
+    <div class="login-form-container">
+      <form th:action="@{/login}" method="post">
+        <div class="logo-container">
+          <img th:src="@{/images/logo-elite.jpeg}" alt="Logo Las Encinas" />
+        </div>
         <h1 class="login-title">Login</h1>
         <input
           type="text"

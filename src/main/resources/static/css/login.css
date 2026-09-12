@@ -6,8 +6,6 @@
 
 body,
 html {
-  background-color: #000;
-  color: white;
   overflow: hidden;
   margin: 0;
   padding: 0;
@@ -26,37 +24,78 @@ html {
 }
 
 body {
-  background-image: url(../images/apc-login-bg.png);
+  background-image: url(../images/background-img.webp);
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
   align-items: center;
+  display: flex;
+}
+
+a {
+  color: #045970;
+  text-decoration: none;
 }
 
 form {
+  row-gap: 15px;
   display: flex;
   flex-direction: column;
-  border: solid 1px white;
-  padding: 10px;
 }
 
-.login-form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 40%;
-  background-color: white;
-}
-
-.login-button-container button {
-  width: 100%;
+form input,
+.submit-btn {
+  padding: 10px 10px;
 }
 
 form input {
-  padding: 5px 10px;
+  border: 0;
+  border-bottom: 2px solid;
 }
 
-.submit-btn{
-  
+.login-form-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 35%;
+  background-color: #fefefe;
+  margin-left: 50px;
+}
+
+.logo-container img {
+  width: 110px;
+  height: 110px;
+}
+
+.login-title {
+  color: #045970;
+  font-size: 2.4em;
+  font-weight: 600;
+}
+
+.submit-btn {
+  background-color: #045970;
+  width: 100%;
+  border: 0;
+  color: #fefefe;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.login-redirect-options {
+  margin-top: 20px;
+}
+
+form input:focus {
+  outline: 0;
+}
+
+form input:not(:placeholder-shown) {
+  border-bottom-color: #045970;
+}
+
+button:hover {
+  cursor: pointer;
 }

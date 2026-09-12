@@ -9,4 +9,12 @@ public class LoginController {
     public String login() {
         return "Login";
     }
+    @GetMapping("/register")
+    public String register() {
+        return "Register";
+    }
+    @GetMapping("/recoverpassword")
+    public String recoverpassword() {
+        return "Recover Password";
+    }
 }
