@@ -52,10 +52,11 @@ form input {
   border-bottom: 2px solid;
 }
 
-.login-form-container {
+.form-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  text-align: center;
   flex-direction: column;
   height: 100vh;
   width: 35%;
@@ -68,7 +69,7 @@ form input {
   height: 110px;
 }
 
-.login-title {
+.title {
   color: #045970;
   font-size: 2.4em;
   font-weight: 600;
@@ -84,12 +85,13 @@ form input {
   margin-top: 10px;
 }
 
-.login-redirect-options {
+.redirect-options {
   margin-top: 20px;
 }
 
 form input:focus {
   outline: 0;
+  letter-spacing: 2px;
 }
 
 form input:not(:placeholder-shown) {

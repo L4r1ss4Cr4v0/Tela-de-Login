@@ -15,6 +15,6 @@ public class LoginController {
     }
     @GetMapping("/recoverpassword")
     public String recoverpassword() {
-        return "Recover Password";
+        return "recoverpassword";
     }
 }
