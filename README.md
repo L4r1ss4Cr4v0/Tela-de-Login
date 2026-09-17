@@ -6,4 +6,9 @@ Projeto de aplicação web que implementa um sistema de login seguro utilizando 
 Tela de login construida em Java (Spring Boot e Thymeleaf)
 
 ---
-## Estru
+## Prints
+![Tela de Login] (/src/main/resources/static/prints/login.png)
+![Tela de Cadastro](/src/main/resources/static/prints/cadastro.png)
+![Tela de Cadastro](/src/main/resources/static/prints/recuperarSenha.png)
+
+---
