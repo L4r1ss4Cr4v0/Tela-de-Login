@@ -45,11 +45,9 @@ Tela-de-Login/
 ├── src/
 │   └── main/
 │       ├── java/
-│       │   └── com/example/LoginPage/
+│       │   └── com/example/Tela-de-Login/
 │       │       ├── controller/
-│       │       ├── model/
-│       │       ├── repository/
-│       │       └── service/
+│       │       └── services/
 │       │
 │       └── resources/
 │           ├── static/
@@ -59,6 +57,7 @@ Tela-de-Login/
 │           │
 │           └── templates/
 │               ├── login.html
+│               ├── recoverpassword.html
 │               └── register.html
 │
 ├── pom.xml
