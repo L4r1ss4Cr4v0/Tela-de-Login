@@ -5,26 +5,32 @@
     <link rel="stylesheet" th:href="@{/css/main.css}">
 </head>
 <body>
-<div class="register-container">
-    <div class="register-image-logo-container">
-        <img th:src="@{/images/apc-login-bg.png}" alt="Logo PUC Minas">
+<div class="form-container">
+    <div class="logo-container img">
+        <img th:src="@{/images/logo-elite.jpeg}" alt="Brasão Las Ensinãs">
     </div>
 
-    <div class="register-form">
-        <h2 class="register-title">Crie sua conta</h2>
+    <div class="form-container">
+        <h2 class="title">Crie sua conta</h2>
 
         <form th:action="@{/register}" method="post">
             <input type="text" name="nome" placeholder="Nome completo" required>
             <input type="email" name="email" placeholder="E-mail" required>
-            <input type="text" name="instituicao" placeholder="Instituição" required>
+            <input type="texto" name="matricula" placeholder="Matrícula" required>
+            <select id="curso" name="curso" required>
+                <option value="" disabled selected>Curso</option>
+                <option value="direito">Direito</option>
+                <option value="engenharia de software">Engenharia de Software</option>
+                <option value="cinema">Cinema</option>
+            </select>
             <input type="password" name="senha" placeholder="Senha" required>
 
-            <div class="register-button-container">
+            <div class="button-container">
                 <button type="submit">Registrar</button>
             </div>
         </form>
 
-        <div class="register-redirect-options">
+        <div class="redirect-options">
             Já possui conta? <a th:href="@{/login}">Faça login</a>
         </div>
     </div>

@@ -43,13 +43,22 @@ form {
 }
 
 form input,
+form select,
 .submit-btn {
   padding: 10px 10px;
 }
 
-form input {
+form input,
+form select {
   border: 0;
   border-bottom: 2px solid;
+}
+
+form select {
+  font-family: inherit;
+  font-size: inherit;
+  color: #555;
+  outline: 0;
 }
 
 .form-container {
